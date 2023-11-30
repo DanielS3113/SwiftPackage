@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Proyecto2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g0-2p-Bbd">
+                                <rect key="frame" x="83" y="168" width="154" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUZ-AY-Uhr">
+                                <rect key="frame" x="100" y="232" width="75" height="34.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-IB-Z0c">
+                                <rect key="frame" x="76" y="512" width="240" height="213"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7QX-Nc-Ivp"/>
+                                    <constraint firstAttribute="height" constant="213" id="U1R-Aj-ZbI"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Manhattan_Bridge_Construction_1909" translatesAutoresizingMaskIntoConstraints="NO" id="Wdr-oi-eLM">
+                                <rect key="frame" x="34" y="305" width="325" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Gbo-sd-oCc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aJ8-IB-Z0c" firstAttribute="top" secondItem="Wdr-oi-eLM" secondAttribute="bottom" constant="57" id="6VQ-tH-uuk"/>
+                            <constraint firstItem="Wdr-oi-eLM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="94w-Ba-7P6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aJ8-IB-Z0c" secondAttribute="bottom" constant="93" id="C8j-XJ-xXu"/>
+                            <constraint firstItem="DUZ-AY-Uhr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="D4h-cY-sBW"/>
+                            <constraint firstItem="DUZ-AY-Uhr" firstAttribute="top" secondItem="4g0-2p-Bbd" secondAttribute="bottom" constant="44" id="M6U-Gv-mdW"/>
+                            <constraint firstItem="Wdr-oi-eLM" firstAttribute="top" secondItem="DUZ-AY-Uhr" secondAttribute="bottom" constant="38.333333333333371" id="Scd-rD-o24"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wdr-oi-eLM" secondAttribute="trailing" constant="34" id="eta-m9-TlC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4g0-2p-Bbd" secondAttribute="trailing" constant="156" id="jjf-1B-X9v"/>
+                            <constraint firstItem="4g0-2p-Bbd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="ktr-db-iS9"/>
+                            <constraint firstItem="4g0-2p-Bbd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="oOS-Au-0SK"/>
+                            <constraint firstItem="aJ8-IB-Z0c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="p4V-MH-pra"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DUZ-AY-Uhr" secondAttribute="trailing" constant="218" id="yHd-M0-F1j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boton" destination="DUZ-AY-Uhr" id="cdR-Ep-Tnz"/>
+                        <outlet property="imagen" destination="Wdr-oi-eLM" id="LrD-O3-HzR"/>
+                        <outlet property="parrafo" destination="aJ8-IB-Z0c" id="fEv-Zk-jua"/>
+                        <outlet property="texto" destination="4g0-2p-Bbd" id="IbD-Gd-AVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="107.63358778625954" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Manhattan_Bridge_Construction_1909" width="3744" height="2256"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
